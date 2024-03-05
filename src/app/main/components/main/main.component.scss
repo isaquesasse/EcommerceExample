@@ -1,0 +1,145 @@
+.bg_container {
+	background: #f8f9fa;
+}
+
+mat-card {
+	border: 10px solid transparent;
+	border-width: large;
+	box-shadow: -1px 0px 24px -6px rgba(0, 0, 0, 0.75);
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/* header */
+
+.cabecalho {
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	width: 100%;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+}
+
+.container__space {
+	flex: 1 1 auto;
+}
+
+.menu__burger {
+	background: white;
+}
+
+/* banner */
+
+.banner {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(to right, #485cce, #1d36c5);
+	color: white;
+	text-align: center;
+	padding: 1em 2em 0.5em 2em;
+}
+
+.banner__titulo {
+	font-size: 18px;
+	font-weight: 700;
+
+}
+
+.banner__pesquisa {
+	margin-top: 1em;
+	background-color: transparent;
+	color: white;
+	width: 100%;
+	font-size: 16px;
+}
+
+.banner__input {
+	padding: 1em 0 1em 0;
+}
+
+/* Carousel */
+
+.img-style {
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	transition: 0.3s ease-out;
+}
+
+.carousel__card {
+	transition: all .3s ease;
+	cursor: pointer;
+}
+
+.carousel__card:hover {
+	transform: scale(1.005);
+	.carousel_title {
+		text-decoration: underline;
+	}
+}
+
+.comprados {
+	height: auto;
+	font-family: 'Pacifico', cursive;
+	font-size: 24px;
+	padding: 1vw;
+}
+
+.carousel_title {
+	font-size: 24px;
+	font-family: var(--font-secondary);
+	font-weight: bold;
+}
+
+.carousel_item {
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+	.carousel {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		margin: auto;
+	}
+
+	.carousel_itens {
+		display: flex;
+		align-items: center center;
+	}
+}
+
+/* Card */
+
+.example-card {
+	max-width: 400px;
+}
+
+.example-header-image {
+	background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+	background-size: cover;
+}
+
+/* Buttons */
+
+.button:hover {
+	transition: 0.2s;
+	transform: scale(1.1);
+}
+
+.menu_button {
+	padding: 20px;
+	transition: border 0.3s ease;
+
+	&:hover {
+		background-color: white;
+		border: 1px solid black;
+		transition: 0.2s;
+		transform: scale(0.99);
+	}
+}

@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+  --primary: #3498db;        /* Azul */
+  --secondary: #2ecc71;      /* Verde esmeralda */
+  --accent: #e74c3c;         /* Vermelho coral */
+  --text-color: #333;        /* Cor de texto principal */
+  --background-color: #ecf0f1; /* Cor de fundo principal */
+
+  --primary-background: rgba(255, 255, 255, 0.9); /* Branco opaco */
+  --border-color: #bdc3c7;   /* Cor da borda */
+
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+  --font-heading: 'Pacifico', cursive;
+}
+
+@import "/node_modules/bootstrap/scss/bootstrap";
+
+.carousel-indicators li {
+    background-color: #191919;
+}
+
+/* Reset.css */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  font-family: var(--font-primary);
+  background: #f8f9fa;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Remove anchor text decoration and underline */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Reset hyperlink color */
+a {
+  color: inherit;
+}
+
+/* Remove table spacing */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-play-state: paused !important;
+    transition: none !important;
+  }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

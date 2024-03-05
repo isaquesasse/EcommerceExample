@@ -1,0 +1,104 @@
+<div fxLayout="column" class="bg_container">
+  <header class="cabecalho">
+    <mat-toolbar color="white">
+      <button mat-icon-button class="button" [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu class="menu__burger" #menu="matMenu">
+        <button mat-menu-item class="menu_button menu__burger"><mat-icon>shopping_basket</mat-icon>Produtos</button>
+        <button mat-menu-item class="menu_button menu__burger"><mat-icon>info</mat-icon>Informações</button>
+      </mat-menu>
+
+      <span>Loja do Isaque</span>
+      <span class="container__space"></span>
+      <button class="button matbadge" mat-icon-button>
+        <mat-icon>person</mat-icon>
+      </button>
+      <button class="button" mat-icon-button>
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="container">
+
+    </div>
+  </header>
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe o que deseja?</h2>
+    <mat-form-field class="banner__pesquisa" appearance="outline">
+      <mat-label>Pesquise aqui</mat-label>
+      <input class="banner__input" matInput placeHolder="...">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </section>
+  <div>
+    <div class="carousel_itens" fxLayout="column" fxLayoutAlign="center" fxFill>
+      <div fxLayoutAlign="center" class="comprados"><a>Mais comprados</a></div>
+      <owl-carousel-o class="carousel" fxFlex="10" fxLayoutAlign="center" [options]="customOptions">
+        <ng-template carouselSlide>
+          <mat-card class="carousel__card">
+              <mat-card-header>
+                  <mat-card-title><h1 class="carousel_title">Lorem Epsum</h1></mat-card-title>
+              </mat-card-header>
+              <img mat-card-image class="img-style" src="/assets/adidas.jpeg">
+              <mat-card-content>
+                <p class="carousel_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse porta, nunc non accumsan mattis, felis mauris imperdiet ligula, et condimentum nisl ipsum ac
+                  lacus.
+                  Ut non auctor nibh. Phasellus sodales tellus quam, quis convallis lacus egestas non. Nulla euismod felis nec
+                  lorem dapibus convallis. </p>
+              </mat-card-content>
+          </mat-card>
+        </ng-template>
+        <ng-template carouselSlide>
+          <mat-card class="carousel__card">
+            <mat-card-header>
+                <mat-card-title><h1 class="carousel_title">Lorem Epsum</h1></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="img-style" src="/assets/nike.jpeg">
+            <mat-card-content>
+              <p class="carousel_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse porta, nunc non accumsan mattis, felis mauris imperdiet ligula, et condimentum nisl ipsum ac
+                lacus.
+                Ut non auctor nibh. Phasellus sodales tellus quam, quis convallis lacus egestas non. Nulla euismod felis nec
+                lorem dapibus convallis. </p>
+            </mat-card-content>
+        </mat-card>
+        </ng-template>
+        <ng-template carouselSlide>
+          <mat-card class="carousel__card">
+            <mat-card-header>
+                <mat-card-title><h1 class="carousel_title">Lorem Epsum</h1></mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="img-style" src="/assets/puma.jpeg">
+            <mat-card-content>
+              <p class="carousel_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse porta, nunc non accumsan mattis, felis mauris imperdiet ligula, et condimentum nisl ipsum ac
+                lacus.
+                Ut non auctor nibh. Phasellus sodales tellus quam, quis convallis lacus egestas non. Nulla euismod felis nec
+                lorem dapibus convallis. </p>
+            </mat-card-content>
+        </mat-card>
+        </ng-template>
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image class="carousel__card" src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
